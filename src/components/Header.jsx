@@ -1,9 +1,11 @@
 import { NavLink } from 'react-router-dom'
 
+import logo from '../images/logo-brown.png'
+
 function Header() {
     return (
-        <header className="flex justify-between pt-2 pl-3 pr-3">
-            <NavLink to="/"><h3>Portfolio Practice</h3></NavLink>
+        <header className="flex items-center justify-between py-1 pl-3 pr-3">
+            <NavLink to="/"><img className="logo" src={logo} alt="HMM Logo" /></NavLink>
 
             <nav>
                 <NavLink to="/">Home</NavLink>

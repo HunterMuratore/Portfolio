@@ -6,10 +6,20 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
+html, body, #root {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1;
 }
 
 /* GLOBAL CLASSES */
@@ -21,6 +31,9 @@ a {
 /* CUSTOM CLASSES */
 header {
   background-color: rgb(205, 200, 137);
+  .logo {
+    height: 50px
+  }
   nav {
     :not(:last-child) {
       margin-right: 10px;
@@ -29,4 +42,26 @@ header {
       text-decoration: underline;
     }
   }
+}
+
+footer {
+  i {
+    color: black;
+  }
+  a:not(:last-child) {
+    margin-right: 5px;
+  }
+  p {
+    font-size: 24px;
+  }
+  .pokeball-img {
+    height: 46px;
+    width: 45px;
+    transition: transform 0.2s ease;
+    &:hover {
+      transform: rotate(-20deg);
+    }
+  }
+
+  flex-shrink: 0;
 }
