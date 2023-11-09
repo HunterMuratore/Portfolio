@@ -1,8 +1,8 @@
 function Home() {
     return (
-        <main className="container">
+        <section className="container">
             <h1>Home</h1>
-        </main>
+        </section>
     )
 }
 

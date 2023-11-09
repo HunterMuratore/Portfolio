@@ -1,10 +1,11 @@
 import pokeballImage from '../images/pokeball.png';
 
 function Footer() {
+    const date = new Date()
     return (
-        <footer className="fixed bottom-0 left-0 z-20 w-full">
+        <footer className="">
             <div className="w-full flex flex-col mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-            <p className="text-center py-2">Hunter Muratore</p>
+            <p className="text-center py-2"><span>&copy; {date.getFullYear()}</span> Hunter Muratore</p>
 
             <div className="flex justify-center items-center space-x-4">
                 <a href="https://github.com/HunterMuratore" target="_blank" rel="noopener noreferrer">

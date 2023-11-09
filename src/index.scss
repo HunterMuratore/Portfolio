@@ -13,12 +13,12 @@ html, body, #root {
   height: 100vh;
 }
 
-body {
+#root {
   display: flex;
   flex-direction: column;
 }
 
-#root {
+main {
   flex: 1;
 }
 
@@ -52,7 +52,10 @@ footer {
     margin-right: 5px;
   }
   p {
-    font-size: 24px;
+    font-size: 18px;
+    span {
+      font-size: 12px;
+    }
   }
   .pokeball-img {
     height: 46px;
@@ -62,6 +65,4 @@ footer {
       transform: rotate(-20deg);
     }
   }
-
-  flex-shrink: 0;
 }
