@@ -1,6 +1,6 @@
 function Home() {
     return (
-        <section className="container">
+        <section>
             <h1>Home</h1>
         </section>
     )

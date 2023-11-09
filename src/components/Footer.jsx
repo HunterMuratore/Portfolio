@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom'
+
 import pokeballImage from '../images/pokeball.png';
 
 function Footer() {
@@ -12,7 +14,7 @@ function Footer() {
                     <i className="fa-brands fa-github fa-2xl"></i>
                 </a>
 
-                <img className="pokeball-img" src={pokeballImage} alt="Pokeball" />
+                <NavLink to="/pokemon"><img className="pokeball-img" src={pokeballImage} alt="Pokeball" /></NavLink>
 
                 <a href="https://www.linkedin.com/in/hunter-muratore-0b38a3173" target="_blank" rel="noopener noreferrer">
                     <i className="fa-brands fa-linkedin fa-2xl"></i>
