@@ -36,13 +36,13 @@ function Contact() {
                         <label className="block uppercase text-xs font-bold mb-2">
                             First Name
                         </label>
-                        <input className="w-full bg-gray-100 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" value={formData.firstName} onChange={handleInputChange} type="text" name="firstName" placeholder="Frodo" required />
+                        <input className="w-full bg-gray-200 border border-gray-200 rounded py-3 px-4 mb-3 focus:bg-white" value={formData.firstName} onChange={handleInputChange} type="text" name="firstName" placeholder="Frodo" required />
                     </div>
                     <div className="w-full md:w-1/2 px-3">
                         <label className="block uppercase tracking-wide text-xs font-bold mb-2">
                             Last Name
                         </label>
-                        <input className="w-full bg-gray-100 border border-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" value={formData.lastName} onChange={handleInputChange} type="text" name="lastName" placeholder="Baggins" required />
+                        <input className="w-full bg-gray-200 border border-gray-200 rounded py-3 px-4 focus:bg-white" value={formData.lastName} onChange={handleInputChange} type="text" name="lastName" placeholder="Baggins" required />
                     </div>
                 </div>
                 <div className="flex flex-wrap -mx-3 mb-6">
@@ -50,7 +50,7 @@ function Contact() {
                         <label className="block uppercase tracking-wide text-xs font-bold mb-2">
                             Email
                         </label>
-                        <input className="appearance-none block w-full bg-gray-100 border border-gray-100 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" value={formData.email} onChange={handleInputChange} type="email" name="email" placeholder="FrodoBaggins@shire.com" required />
+                        <input className="appearance-none block w-full bg-gray-200 border border-gray-200 rounded py-3 px-4 mb-3 focus:bg-white" value={formData.email} onChange={handleInputChange} type="email" name="email" placeholder="FroBags@shire.com" required />
                     </div>
                 </div>
                 <div className="flex flex-wrap mb-6">
