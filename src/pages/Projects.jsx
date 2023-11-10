@@ -58,7 +58,7 @@ function Projects() {
             </article>
             <figure className="container mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
                 {projects.map((project, i) => (
-                    <div key={i} className='project-card flex flex-col p-2 mx-auto border border-white'>
+                    <div key={i} className='project-card flex flex-col p-2 mx-auto'>
                         <img src={project.img} alt={project.img} className='project-img' />
                         <h2 className='mt-6 font-semibold text-lg'>{project.name}</h2>
                         <figcaption className='my-1 card-body'>{project.description}</figcaption>
