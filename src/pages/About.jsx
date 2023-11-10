@@ -28,7 +28,7 @@ function About() {
             </section>
             <section className="languages flex flex-col text-center mt-4 mb-4">
                 <h1 className="text-2xl font-bold mt-10 mb-5">Languages & Skills</h1>
-                <div className="space-x-10 sm:space-x-20 grid grid-flow-col auto-cols-max mx-auto">
+                <div className="space-x-10 sm:space-x-20 grid grid-flow-col mx-auto">
                     <div className="px-2 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
                         <img className="w-14 sm:w-20 md:w-full" src={js} alt="JavaScript" />
                         <img className="w-14 sm:w-20 md:w-full" src={html} alt="HTML" />
