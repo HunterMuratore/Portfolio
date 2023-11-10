@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const initialFormData = {
@@ -11,6 +12,7 @@ const initialFormData = {
 }
 
 function Contact() {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState(initialFormData)
 
     const handleSubmit = async (e) => {
@@ -27,6 +29,9 @@ function Contact() {
         } catch (error) {
             console.error('An error occurred while sending the message', error);
         }
+        
+        // Send user to success page after submitting form (even if repsonse isn't OK)
+        navigate('/success');
 
         setFormData({
             ...initialFormData

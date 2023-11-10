@@ -164,6 +164,19 @@ header {
   }
 }
 
+.success {
+  padding: 0 5%;
+
+  button {
+    background-color: darken($theme-accent, 10%);
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: darken($theme-accent, 18%);
+    }
+  }
+}
+
 footer {
   i {
     color: $theme-text;
