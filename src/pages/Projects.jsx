@@ -56,7 +56,7 @@ function Projects() {
                 <p>I graduated from Drew University as a member of Phi Beta Kappa with a B.S. in Chemistry and a minor in French. After a year in industrial chemistry I have shifted my career focus towards software engineering and development.</p>
                 <p>I have created and maintained several projects, including this website, of which many are dockerized and hosted on my personal server.</p>
             </article>
-            <figure className="container mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto">
+            <figure className="container mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
                 {projects.map((project, i) => (
                     <div key={i} className='project-card flex flex-col p-2 mx-auto border border-white'>
                         <img src={project.img} alt={project.img} className='project-img' />
@@ -64,7 +64,7 @@ function Projects() {
                         <figcaption className='my-1 card-body'>{project.description}</figcaption>
                         <div className='mt-auto mb-5'>
                             <a href={project.gitLink} target='_blank' rel='noopener noreferrer' className='git-btn text-sm my-5 py-2 px-3 rounded'><button>GitHub</button></a>
-                            {project.appLink ? <a href={project.appLink} target='_blank' rel='noopener noreferrer' className='app-btn text-sm my-5 py-2 px-3 rounded ml-4'><button>Live App</button></a> : ''}
+                            {project.appLink ? <a href={project.appLink} target='_blank' rel='noopener noreferrer' className='app-btn text-sm my-5 py-2 px-3 rounded ml-6'><button>Live App</button></a> : ''}
                         </div>
                     </div>
                 ))}
