@@ -53,10 +53,6 @@ a {
 header {
   background-color: $theme-accent;
 
-  .logo {
-    height: 36px
-  }
-
   nav {
     :not(:last-child) {
       margin-right: 10px;
@@ -76,6 +72,10 @@ header {
     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
     height: 1px;
     border: none;
+  }
+
+  img {
+    border-radius: 6px;
   }
 }
 
@@ -123,12 +123,21 @@ header {
   .project-card {
     background-color: darken($theme-light, 5%);
     border-radius: 2%;
+    border: lighten($theme-light, 5%) solid 4px;
     height: 500px;
     width: 300px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: none;
+    
+    &:hover {
+      transform: translate(5px, -5px);
+      box-shadow: -4px 0 8px lighten($theme-dark, 10%), 0 4px 8px lighten($theme-dark, 10%);
+    }
 
     .project-img {
       height: 225px;
       border-radius: 2%;
+      border: lighten($theme-light, 5%) solid 1px;
     }
 
     .git-btn,
