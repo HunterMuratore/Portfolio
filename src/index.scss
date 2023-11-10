@@ -18,6 +18,7 @@ $theme-text: #EEEEEE;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1.4;
 }
 
 html, body, #root {
@@ -26,10 +27,13 @@ html, body, #root {
 }
 
 /* GLOBAL CLASSES */
+body {
+  background-color: $theme-dark;
+}
+
 #root {
   display: flex;
   flex-direction: column;
-  background-color: $theme-dark;
 }
 
 main {
@@ -76,6 +80,20 @@ header {
   }
 }
 
+.about {
+  padding: 0 5%;
+  p {
+    margin-bottom: 10px;
+  }
+  button {
+    background-color: darken($theme-accent, 10%);
+    transition: background-color 0.2s ease-in-out;
+    &:hover {
+      background-color: darken($theme-accent, 18%);
+    }
+  }
+}
+
 footer {
   i {
     color: $theme-text;
@@ -98,3 +116,4 @@ footer {
     }
   }
 }
+
