@@ -13,14 +13,15 @@ function Resume() {
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
+    setPageNumber(1);
   }
 
   return (
     <>
-      <h1 className='text-center text-2xl font-bold mt-10 mb-5'>Resume</h1>
+      <h1 className='text-center text-2xl font-bold mt-10 mb-5'>Resume <a href={resume} target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down ml-2"></i></a></h1>
       <div className="pdf-container max-w-[600px] mx-auto">
         <Document file={resume} onLoadSuccess={onDocumentLoadSuccess}>
-          <Page pageNumber={pageNumber} />
+            <Page pageNumber={pageNumber} />
         </Document>
         <p>
           Page {pageNumber} of {numPages}
