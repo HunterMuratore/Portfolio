@@ -69,6 +69,11 @@ header {
   }
 }
 
+.home {
+  padding: 0 5%;
+
+}
+
 .contact {
   input {
     color: #000;
@@ -136,15 +141,9 @@ header {
 .pokemon-container {  
   .pokeball-btn {
     padding: 1%;
-    text-align: left;
     
     :hover {
       transform: rotate(35deg);
-    }
-    
-    img {
-      width: 46px;
-      height: 45px;
     }
   }
   

@@ -3,7 +3,7 @@ import formforwarder from '../images/projects/formforwarder.png'
 import trails from '../images/projects/trails.png'
 import jate from '../images/projects/jate.png'
 import employee_tracker from '../images/projects/employee_tracker.png'
-import pokemon_gen from '../images/projects/pokemon_gen.png'
+import pokemon_gen from '../images/projects/pokemon.png'
 
 const projects = [
     {
