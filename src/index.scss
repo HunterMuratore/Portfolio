@@ -8,15 +8,23 @@ $theme-light: #393E46;
 $theme-accent: #4ECCA3;
 $theme-text: #EEEEEE;
 
+@font-face {
+  font-family: 'pokemon';
+  src: url('./assets/pokemon-font.ttf');
+}
+
 /* RESETS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   line-height: 1.4;
+  font-family: sans-serif;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100vh;
   color: $theme-text;
 }
@@ -44,14 +52,18 @@ a {
 /* CUSTOM CLASSES */
 header {
   background-color: $theme-accent;
+
   .logo {
     height: 36px
   }
+
   nav {
     :not(:last-child) {
       margin-right: 10px;
     }
-    :hover, .active {
+
+    :hover,
+    .active {
       text-decoration: underline;
     }
   }
@@ -61,14 +73,17 @@ header {
   input {
     color: #000;
   }
+
   #message {
     border: $theme-light solid 4px;
     color: $theme-text;
     background-color: darken($theme-light, 8%);
   }
+
   button {
     background-color: darken($theme-accent, 10%);
     transition: background-color 0.2s ease-in-out;
+
     &:hover {
       background-color: darken($theme-accent, 18%);
     }
@@ -77,12 +92,15 @@ header {
 
 .about {
   padding: 0 5%;
+
   p {
     margin-bottom: 10px;
   }
+
   button {
     background-color: darken($theme-accent, 10%);
     transition: background-color 0.2s ease-in-out;
+
     &:hover {
       background-color: darken($theme-accent, 18%);
     }
@@ -91,22 +109,23 @@ header {
 
 .projects {
   padding: 0 5%;
-  p {
-    margin-bottom: 10px;
-  }
+
   .project-card {
     background-color: darken($theme-light, 5%);
     border-radius: 2%;
     height: 500px;
-    width: 275px;
+    width: 300px;
+
     .project-img {
       height: 225px;
-      width: 375px;
       border-radius: 2%;
     }
-    .git-btn, .app-btn {
+
+    .git-btn,
+    .app-btn {
       background-color: darken($theme-accent, 10%);
       transition: background-color 0.2s ease-in-out;
+
       &:hover {
         background-color: darken($theme-accent, 18%);
       }
@@ -114,26 +133,51 @@ header {
   }
 }
 
+.pokemon-container {  
+  .pokeball-btn {
+    padding: 1%;
+    text-align: left;
+    
+    :hover {
+      transform: rotate(35deg);
+    }
+    
+    img {
+      width: 46px;
+      height: 45px;
+    }
+  }
+  
+  p, p * {
+    font-family: 'pokemon';
+    color: $theme-text;
+  }
+}
+
 footer {
   i {
     color: $theme-text;
   }
+
   a:not(:last-child) {
     margin-right: 5px;
   }
+
   p {
     font-size: 14px;
+
     span {
       font-size: 10px;
     }
   }
+
   .pokeball-img {
     height: 36px;
     width: 35px;
     transition: transform 0.2s ease;
+
     &:hover {
       transform: rotate(-20deg);
     }
   }
 }
-
