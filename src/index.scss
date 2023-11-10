@@ -3,11 +3,6 @@
 @import "tailwindcss/utilities";
 
 /* VARIABLES */
-// $theme-dark: #3A4D39;
-// $theme-med: #4F6F52;
-// $theme-light: #739072;
-// $theme-accent: #ECE3CE;
-
 $theme-dark: #232931;
 $theme-light: #393E46;
 $theme-accent: #4ECCA3;
@@ -90,6 +85,31 @@ header {
     transition: background-color 0.2s ease-in-out;
     &:hover {
       background-color: darken($theme-accent, 18%);
+    }
+  }
+}
+
+.projects {
+  padding: 0 5%;
+  p {
+    margin-bottom: 10px;
+  }
+  .project-card {
+    background-color: darken($theme-light, 5%);
+    border-radius: 2%;
+    height: 500px;
+    width: 275px;
+    .project-img {
+      height: 225px;
+      width: 375px;
+      border-radius: 2%;
+    }
+    .git-btn, .app-btn {
+      background-color: darken($theme-accent, 10%);
+      transition: background-color 0.2s ease-in-out;
+      &:hover {
+        background-color: darken($theme-accent, 18%);
+      }
     }
   }
 }
