@@ -69,6 +69,16 @@ header {
   }
 }
 
+.home {
+  padding: 0 5%;
+
+  hr {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    height: 1px;
+    border: none;
+  }
+}
+
 .contact {
   input {
     color: #000;
@@ -133,22 +143,17 @@ header {
   }
 }
 
-.pokemon-container {  
+.pokemon-container {
   .pokeball-btn {
     padding: 1%;
-    text-align: left;
-    
+
     :hover {
       transform: rotate(35deg);
     }
-    
-    img {
-      width: 46px;
-      height: 45px;
-    }
   }
-  
-  p, p * {
+
+  p,
+  p * {
     font-family: 'pokemon';
     color: $theme-text;
   }

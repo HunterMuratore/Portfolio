@@ -99,17 +99,17 @@ function Pokemon() {
     };
 
     return (
-        <section className='pokemon-container mx-auto mt-10 mb-3 w-[1000px]'>
+        <section className='pokemon-container mx-auto mt-10 mb-3 w-[325px] sm:w-[500px] md:w-[600px] lg:w-[900px] xl:w-[1000px]'>
             <div className='pokeball'>
                 <button className='pokeball-btn' onClick={handlePokeballClick}>
-                    <img src={pokeball} alt="Pokeball" />
+                    <img className='w-[36px] h-[35px] md:w-[46px] md:h-[45px]' src={pokeball} alt="Pokeball" />
                 </button>
             </div>
             <div className='pokemon-card'>
-                <div className='pokemon-img mx-auto py-28 w-[1000px]' style={{ backgroundImage: `linear-gradient(to bottom, ${themeColor}, ${themeColor2})` }}>
-                    <img className="block mx-auto my-5 h-[400px] w-[400px]" src={imgSrc} alt={pokeName + ' image'} />
+                <div className='pokemon-img mx-auto py-20 sm:py-28 w-[325px] sm:w-[500px] md:w-[600px] lg:w-[900px] xl:w-[1000px]' style={{ backgroundImage: `linear-gradient(to bottom, ${themeColor}, ${themeColor2})` }}>
+                    <img className="block mx-auto my-5 h-[150px] w-[150px] sm:h-[200px] sm:w-[200px] md:h-[300px] md:w-[300px] lg:h-[400px] lg:w-[400px]" src={imgSrc} alt={pokeName + ' image'} />
                 </div>
-                <div className='pokemon-name mx-auto text-center my-2.5 text-3xl font-semibold text-black'>
+                <div className='pokemon-name mx-auto text-center my-2.5 text-sm sm:text-lg md:text-xl lg:text-3xl font-semibold text-black'>
                     <p>A wild <span style={{ color: themeColor }}>{pokeName}</span> appeared!</p>
                 </div>
             </div>

@@ -28,7 +28,7 @@ function Contact() {
     }
 
     return (
-        <section className="contact flex flex-col justify-center mx-auto">
+        <section className="contact flex flex-col justify-center mx-auto mb-6">
             <h2 className="text-center text-2xl font-bold mt-10">Contact Me</h2>
             <form onSubmit={handleSubmit} className="w-full max-w-lg mx-auto mt-10" >
                 <div className="flex flex-wrap -mx-3 mb-6">
