@@ -1,5 +1,7 @@
 import { NavLink } from 'react-router-dom'
 
+import headshot from '../images/Hunter_Headshot.jpg'
+
 import angular from '../images/logos/angular.png'
 import bash from '../images/logos/bash.png'
 import bootstrap from '../images/logos/bootstrap.png'
@@ -19,14 +21,21 @@ function About() {
     return (
         <>
             <section className="about text-center">
-                <article className="2xl:text-2xl xl:text-xl lg:text-xl md:text-lg sm:text-md">
-                    <h1 className="text-2xl font-bold mt-10 mb-5">About Me</h1>
+                <div className="flex flex-col-reverse md:flex-row justify-center items-center md:space-x-10 mt-10">
+                    <img className='max-h-[300px]' src={headshot} alt="Hunter Headshot" />
+                    <div>
+                        <h1 className="text-3xl font-bold mt-10 mb-5">Hunter Muratore</h1>
+                        <hr className="w-[300px] mx-auto" />
+                        <h2 className="text-3xl font-bold mt-5 mb-10">Full Stack Developer</h2>
+                    </div>
+                </div>
+                <article className="2xl:text-2xl xl:text-xl lg:text-xl md:text-lg sm:text-md mt-10">
                     <p>Through 2020 and 2021 I worked as a R&D specialist in an inorganic chemistry lab at Air Liquide. I am currently job-searching and volunteering my time at a local park running weekly baseball tournaments.</p>
                     <p>In my free time, I have been creating various projects to build a portfolio and deepen my understanding of programming. When I&rsquo;m not working or studying I enjoy playing challenging games. Some of my favorites include Slay The Spire, Terraria, Rocket League, and Magic: The Gathering.</p>
                 </article>
-                <NavLink to="/resume"><button type="button" className="text-sm my-5 py-2 px-3 rounded">View My Resume</button></NavLink>
+                <NavLink to="/resume"><button type="button" className="text-sm mt-10 my-5 py-2 px-3 rounded">View My Resume</button></NavLink>
             </section>
-            <section className="languages flex flex-col text-center mt-4 mb-4">
+            <section className="languages flex flex-col text-center mb-4">
                 <h1 className="text-2xl font-bold mt-10 mb-5">Languages & Skills</h1>
                 <div className="space-x-10 sm:space-x-20 grid grid-flow-col mx-auto">
                     <div className="px-2 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
