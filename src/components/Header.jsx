@@ -8,7 +8,6 @@ function Header() {
             <NavLink to="/about"><img className="max-h-[36px] lg:max-h-[52px]" src={logo} alt="HMM Logo" /></NavLink>
 
             <nav className="text-sm sm:text-md lg:text-lg">
-                <NavLink to="/">Home</NavLink>
                 <NavLink to="/about">About</NavLink>
                 <NavLink to="/projects">Projects</NavLink>
                 <NavLink to="/resume">Resume</NavLink>
