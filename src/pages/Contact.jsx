@@ -1,8 +1,8 @@
 import { useState } from "react"
+import { useNavigate } from "react-router";
 import axios from "axios";
 
 const initialFormData = {
-    _next: '/success',
     subject: 'New Portfolio Message',
     firstName: '',
     lastName: '',
@@ -12,15 +12,22 @@ const initialFormData = {
 
 function Contact() {
     const [formData, setFormData] = useState(initialFormData)
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault()
 
         try {
-            const response = await axios.post('https://mail.huntermuratore.com/muratoreh@gmail.com', formData);
+            const response = await axios.post('https://mail.huntermuratore.com/muratoreh@gmail.com', formData, {
+                headers : {
+                    "Content-Type" : "application/x-www-form-urlencoded"
+                  },
+            });
 
             if (response.status === 200) {
                 console.log('Message sent successfully!');
+                // Redirect user to success page after form submission
+                navigate('/success');
             } else {
                 console.error('Failed to send message');
             }
