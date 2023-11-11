@@ -1,4 +1,5 @@
 import { useState } from "react"
+import axios from "axios";
 
 const initialFormData = {
     _next: '/success',
@@ -12,8 +13,21 @@ const initialFormData = {
 function Contact() {
     const [formData, setFormData] = useState(initialFormData)
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
+
+        try {
+            const response = await axios.post('https://mail.huntermuratore.com/muratoreh@gmail.com', formData);
+
+            if (response.status === 200) {
+                console.log('Message sent successfully!');
+            } else {
+                console.error('Failed to send message');
+            }
+        } catch (error) {
+            console.error('An error occurred while sending the message', error);
+        }
+        
 
         setFormData({
             ...initialFormData
