@@ -27,7 +27,6 @@ function Contact() {
         } catch (error) {
             console.error('An error occurred while sending the message', error);
         }
-        
 
         setFormData({
             ...initialFormData
