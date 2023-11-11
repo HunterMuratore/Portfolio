@@ -65,6 +65,20 @@ header {
   }
 }
 
+.home {
+  padding: 0 5%;
+
+  hr {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    height: 1px;
+    border: none;
+  }
+
+  img {
+    border-radius: 6px;
+  }
+}
+
 .contact {
   input {
     color: #000;
@@ -88,16 +102,6 @@ header {
 
 .about {
   padding: 0 5%;
-
-  hr {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-    height: 1px;
-    border: none;
-  }
-
-  img {
-    border-radius: 6px;
-  }
 
   p {
     margin-bottom: 10px;
