@@ -1,7 +1,5 @@
 import { NavLink } from 'react-router-dom'
 
-import headshot from '../images/Hunter_Headshot.jpg'
-
 import angular from '../images/logos/angular.png'
 import bash from '../images/logos/bash.png'
 import bootstrap from '../images/logos/bootstrap.png'
@@ -21,15 +19,8 @@ function About() {
     return (
         <>
             <section className="about text-center">
-                <div className="flex flex-col-reverse md:flex-row justify-center items-center md:space-x-10 mt-10">
-                    <img className='max-h-[300px]' src={headshot} alt="Hunter Headshot" />
-                    <div>
-                        <h1 className="text-3xl font-bold mt-10 mb-5">Hunter Muratore</h1>
-                        <hr className="w-[300px] mx-auto" />
-                        <h2 className="text-3xl font-bold mt-5 mb-10">Full-Stack Developer</h2>
-                    </div>
-                </div>
                 <article className="2xl:text-2xl xl:text-xl lg:text-xl md:text-lg sm:text-md mt-10">
+                    <h1 className="text-2xl font-bold mt-10 mb-5">About Me</h1>
                     <p>Through 2020 and 2021 I worked as a R&D specialist in an inorganic chemistry lab at Air Liquide. Looking for a career change, I shifted my focus to software development. Following a year of independent learning, I decided to pursue a certificate from the Rutgers Full-Stack Bootcamp. With my extensive background in inorganic chemistry and the comprehensive skill set I acquired during the bootcamp, I have successfully undertaken the development of several full-stack applications. This ongoing journey has culminated in my establishment as a proficient and adept full-stack developer.</p>
                     <p>In my free time, I enjoy playing challenging games. Some of my favorites include Slay The Spire, Terraria, Rocket League, and Magic: The Gathering.</p>
                 </article>
