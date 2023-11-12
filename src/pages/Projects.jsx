@@ -7,6 +7,12 @@ import pokemon_gen from '../images/projects/pokemon.png'
 
 const projects = [
     {
+        name: 'FormForwarder',
+        description: 'An API built in C# using .NET Core that takes in form data and formats it into an email to send to user.',
+        img: formforwarder,
+        gitLink: 'https://github.com/HunterMuratore/FormForwarder'
+    },
+    {
         name: 'Musik',
         description: 'Full stack app allowing users to share their favorite songs and connect with other users over music.',
         img: musik,
@@ -26,12 +32,6 @@ const projects = [
         img: jate,
         gitLink: 'https://github.com/HunterMuratore/pwa-text-editor',
         appLink: 'https://morning-shelf-20480-d6c36316ee54.herokuapp.com/'
-    },
-    {
-        name: 'FormForwarder',
-        description: 'An API built in C# using .NET Core that takes in form data and formats it into an email to send to user.',
-        img: formforwarder,
-        gitLink: 'https://github.com/HunterMuratore/FormForwarder'
     },
     {
         name: 'Employee Tracker',
