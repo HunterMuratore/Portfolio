@@ -70,7 +70,7 @@ function Contact() {
                         <label className="block uppercase tracking-wide text-xs font-bold mb-2">
                             Email
                         </label>
-                        <input className="appearance-none block w-full bg-gray-200 border border-gray-200 rounded py-3 px-4 mb-3 focus:bg-white" value={formData.email} onChange={handleInputChange} type="email" name="email" placeholder="FroBags@shire.com" required />
+                        <input className="appearance-none block w-full bg-gray-200 border border-gray-200 rounded py-3 px-4 mb-3 focus:bg-white" value={formData.email} onChange={handleInputChange} type="email" name="email" placeholder="FroBags@TheShire.com" required />
                     </div>
                 </div>
                 <div className="flex flex-wrap mb-6">
