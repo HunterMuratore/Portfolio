@@ -8,7 +8,7 @@ import pokemon_gen from '../images/projects/pokemon.png'
 const projects = [
     {
         name: 'FormForwarder',
-        description: 'An API built in C# using .NET Core that takes in form data and formats it into an email to send to user.',
+        description: 'An API built in C# using .NET Core that takes in form data and formats it into an email to send to user. Currently being used in my contact form!',
         img: formforwarder,
         gitLink: 'https://github.com/HunterMuratore/FormForwarder'
     },
@@ -63,8 +63,8 @@ function Projects() {
                         <h2 className='mt-6 font-semibold text-lg'>{project.name}</h2>
                         <figcaption className='my-1 card-body'>{project.description}</figcaption>
                         <div className='mt-auto mb-5'>
-                            <a href={project.gitLink} target='_blank' rel='noopener noreferrer' className='git-btn text-sm my-5 py-2 px-3 rounded'><button>GitHub</button></a>
-                            {project.appLink ? <a href={project.appLink} target='_blank' rel='noopener noreferrer' className='app-btn text-sm my-5 py-2 px-3 rounded ml-6'><button>Live App</button></a> : ''}
+                            <a href={project.gitLink} target='_blank' rel='noopener noreferrer' className='my-btn text-sm my-5 py-2 px-3 rounded'><button>GitHub</button></a>
+                            {project.appLink ? <a href={project.appLink} target='_blank' rel='noopener noreferrer' className='my-btn text-sm my-5 py-2 px-3 rounded ml-6'><button>Live App</button></a> : ''}
                         </div>
                     </div>
                 ))}

@@ -24,7 +24,7 @@ function About() {
                     <p>Through 2020 and 2021 I worked as a R&D specialist in an inorganic chemistry lab at Air Liquide. Looking for a career change, I shifted my focus to software development. Following a year of independent learning, I decided to pursue a certificate from the Rutgers Full-Stack Bootcamp. With my extensive background in inorganic chemistry and the comprehensive skill set I acquired during the bootcamp, I have successfully undertaken the development of several full-stack applications. This ongoing journey has culminated in my establishment as a proficient and adept full-stack developer.</p>
                     <p>In my free time, I enjoy playing challenging games. Some of my favorites include Slay The Spire, Terraria, Rocket League, and Magic: The Gathering.</p>
                 </article>
-                <NavLink to="/resume"><button type="button" className="text-sm mt-10 my-5 py-2 px-3 rounded">View My Resume</button></NavLink>
+                <NavLink to="/resume"><button type="button" className="my-btn text-sm mt-10 my-5 py-2 px-3 rounded">View My Resume</button></NavLink>
             </section>
             <section className="languages flex flex-col text-center mb-4">
                 <h1 className="text-2xl font-bold mt-10 mb-5">Languages & Skills</h1>

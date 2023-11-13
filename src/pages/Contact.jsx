@@ -30,9 +30,11 @@ function Contact() {
                 navigate('/success');
             } else {
                 console.error('Failed to send message');
+                navigate('/error');
             }
         } catch (error) {
             console.error('An error occurred while sending the message', error);
+            navigate('/error');
         }
 
         setFormData({
@@ -78,7 +80,7 @@ function Contact() {
                     <textarea id="message" rows="4" className="block p-2.5 w-full text-sm rounded-lg bg-gray-50" value={formData.message} onChange={handleInputChange} name="message" placeholder="Type your message here..." required></textarea>
                 </div>
                 <div className="flex justify-end">
-                    <button className="text-sm py-2 px-3 rounded" type="submit">Send Message</button>
+                    <button className="my-btn text-sm py-2 px-3 rounded" type="submit">Send Message</button>
                 </div>
             </form>
         </section>

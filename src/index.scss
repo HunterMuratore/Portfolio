@@ -49,6 +49,15 @@ a {
   color: white;
 }
 
+.my-btn {
+    background-color: darken($theme-accent, 10%);
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: darken($theme-accent, 18%);
+    }
+}
+
 /* CUSTOM CLASSES */
 header {
   background-color: $theme-accent;
@@ -89,15 +98,6 @@ header {
     color: $theme-text;
     background-color: darken($theme-light, 8%);
   }
-
-  button {
-    background-color: darken($theme-accent, 10%);
-    transition: background-color 0.2s ease-in-out;
-
-    &:hover {
-      background-color: darken($theme-accent, 18%);
-    }
-  }
 }
 
 .about {
@@ -105,15 +105,6 @@ header {
 
   p {
     margin-bottom: 10px;
-  }
-
-  button {
-    background-color: darken($theme-accent, 10%);
-    transition: background-color 0.2s ease-in-out;
-
-    &:hover {
-      background-color: darken($theme-accent, 18%);
-    }
   }
 }
 
@@ -139,16 +130,6 @@ header {
       border-radius: 2%;
       border: lighten($theme-light, 5%) solid 1px;
     }
-
-    .git-btn,
-    .app-btn {
-      background-color: darken($theme-accent, 10%);
-      transition: background-color 0.2s ease-in-out;
-
-      &:hover {
-        background-color: darken($theme-accent, 18%);
-      }
-    }
   }
 }
 
@@ -170,15 +151,14 @@ header {
 
 .success {
   padding: 0 5%;
+}
 
-  button {
-    background-color: darken($theme-accent, 10%);
-    transition: background-color 0.2s ease-in-out;
+.not-found {
+  padding: 0 5%;
+}
 
-    &:hover {
-      background-color: darken($theme-accent, 18%);
-    }
-  }
+.error {
+  padding: 0 5%;
 }
 
 footer {
