@@ -8,7 +8,7 @@ function Home() {
                     <h1 className="text-3xl font-bold mt-10 mb-5">Hunter Muratore</h1>
                     <hr className="w-[300px] mx-auto" />
                     <h2 className="text-3xl font-bold mt-5 mb-5">Full-Stack Developer</h2>
-                    <p className="text-xl xl:px-96 mt-5 mb-5">Industrial Chemist turned dynamic Full-Stack Developer. Grounded in science and complemented by coding, my approach reflects adaptability in the ever-evolving landscape of technology.</p>
+                    <p className="text-xl xl:px-96 mt-5 mb-5">Industrial Chemist turned Full-Stack Developer. My science background now complements my primary focus on coding, showcasing adaptability in tech's ever-evolving landscape.</p>
                 </div>
                 <img className='max-h-[500px] mx-auto' src={headshot} alt="Hunter Headshot" />
             </div>
