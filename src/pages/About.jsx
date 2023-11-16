@@ -14,6 +14,7 @@ import vscode from '../images/logos/vscode.png'
 import react from '../images/logos/react.png'
 import tailwind from '../images/logos/tailwind.png'
 import mongodb from '../images/logos/mongodb.png'
+import graphql from '../images/logos/graphql.png'
 
 function About() {
     return (
@@ -43,9 +44,10 @@ function About() {
                         <img className="w-14 sm:w-20 md:w-full" src={visual_studio} alt="Visual Studio" />
                         <img className="w-14 sm:w-20 md:w-full" src={tailwind} alt="Tailwind" />
                         <img className="w-14 sm:w-20 md:w-full" src={bootstrap} alt="Bootstrap" />
-                        <img className="w-14 sm:w-20 md:w-full" src={bash} alt="Bash" />
                         <img className="w-14 sm:w-20 md:w-full" src={mongodb} alt="mongodb" />
+                        <img className="w-14 sm:w-20 md:w-full" src={graphql} alt="graphql" />
                         <img className="w-14 sm:w-20 md:w-full" src={docker} alt="Docker" />
+                        <img className="w-14 sm:w-20 md:w-full" src={bash} alt="Bash" />
                     </div>
                 </div>
             </section>
