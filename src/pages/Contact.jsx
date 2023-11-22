@@ -28,16 +28,13 @@ function Contact() {
             })
 
             if (response.status === 200) {
-                console.log('Message sent successfully!')
                 // Redirect user to success page after form submission
                 navigate('/success')
             } else {
-                console.error('Failed to send message')
                 navigate('/error')
             }
 
         } catch (error) {
-            console.error('An error occurred while sending the message', error)
             navigate('/error')
         } finally {
             // Regardless of success or failure, reset the form data
