@@ -1,6 +1,6 @@
 import { useState } from "react"
-import { useNavigate } from "react-router";
-import axios from "axios";
+import { useNavigate } from "react-router"
+import axios from "axios"
 
 const initialFormData = {
     subject: 'New Portfolio Message',
@@ -12,34 +12,38 @@ const initialFormData = {
 
 function Contact() {
     const [formData, setFormData] = useState(initialFormData)
-    const navigate = useNavigate();
+    const [loading, setLoading] = useState(false)
+    const navigate = useNavigate()
 
     const handleSubmit = async (e) => {
         e.preventDefault()
 
+        setLoading(true)
+
         try {
             const response = await axios.post('https://mail.huntermuratore.com/muratoreh@gmail.com', formData, {
-                headers : {
-                    "Content-Type" : "application/x-www-form-urlencoded"
-                  },
-            });
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+            })
 
             if (response.status === 200) {
-                console.log('Message sent successfully!');
+                console.log('Message sent successfully!')
                 // Redirect user to success page after form submission
-                navigate('/success');
+                navigate('/success')
             } else {
-                console.error('Failed to send message');
-                navigate('/error');
+                console.error('Failed to send message')
+                navigate('/error')
             }
+
         } catch (error) {
-            console.error('An error occurred while sending the message', error);
-            navigate('/error');
+            console.error('An error occurred while sending the message', error)
+            navigate('/error')
         } finally {
             // Regardless of success or failure, reset the form data
             setFormData({
                 ...initialFormData
-            });
+            })
         }
     }
 
@@ -80,6 +84,14 @@ function Contact() {
                     <label className="block uppercase tracking-wide text-xs font-bold mb-2">Message</label>
                     <textarea id="message" rows="4" className="block p-2.5 w-full text-sm rounded-lg bg-gray-50" value={formData.message} onChange={handleInputChange} name="message" placeholder="Type your message here..." required></textarea>
                 </div>
+
+                {/* Loading spinner */}
+                {loading && (
+                    <div className="text-center mt-4">
+                        <p>Loading...</p>
+                    </div>
+                )}
+
                 <div className="flex justify-end">
                     <button className="my-btn text-sm py-2 px-3 rounded" type="submit">Send Message</button>
                 </div>
