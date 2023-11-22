@@ -35,11 +35,12 @@ function Contact() {
         } catch (error) {
             console.error('An error occurred while sending the message', error);
             navigate('/error');
+        } finally {
+            // Regardless of success or failure, reset the form data
+            setFormData({
+                ...initialFormData
+            });
         }
-
-        setFormData({
-            ...initialFormData
-        })
     }
 
     const handleInputChange = (e) => {

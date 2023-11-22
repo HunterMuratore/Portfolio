@@ -1,9 +1,9 @@
 import musik from '../images/projects/musik.png'
 import formforwarder from '../images/projects/formforwarder.png'
-import trails from '../images/projects/trails.png'
 import jate from '../images/projects/jate.png'
 import employee_tracker from '../images/projects/employee_tracker.png'
 import pokemon_gen from '../images/projects/pokemon.png'
+import yokai from '../images/projects/yokai.png'
 
 const projects = [
     {
@@ -13,18 +13,18 @@ const projects = [
         gitLink: 'https://github.com/HunterMuratore/FormForwarder'
     },
     {
+        name: 'Yokai',
+        description: 'Full-stack web app that allows users to create wish lists of products which other users can see and purchase for them.',
+        img: yokai,
+        gitLink: 'https://github.com/HunterMuratore/Yokai',
+        appLink: 'https://nameless-mesa-64050-dec54f78b1de.herokuapp.com/'
+    },
+    {
         name: 'Musik',
         description: 'Full stack app allowing users to share their favorite songs and connect with other users over music.',
         img: musik,
         gitLink: 'https://github.com/HunterMuratore/Musik',
         appLink: 'https://arcane-refuge-32686-92d3868f1b08.herokuapp.com/'
-    },
-    {
-        name: 'Trails Near Me',
-        description: 'A web app that finds hiking trails near the user\'s location and displays them on an interactive map. The user can see weather info at the trail and save their favorite trails.',
-        img: trails,
-        gitLink: 'https://github.com/HunterMuratore/trails-near-me',
-        appLink: 'https://huntermuratore.github.io/trails-near-me/'
     },
     {
         name: 'J.A.T.E.',
