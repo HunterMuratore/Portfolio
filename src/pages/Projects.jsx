@@ -8,20 +8,20 @@ import yokai from '../images/projects/yokai.png'
 const projects = [
     {
         name: 'FormForwarder',
-        description: 'An API built in C# using .NET Core that takes in form data and formats it into an email to send to user. Currently being used in my contact form!',
+        description: 'API built in C# using .NET Core that takes in form data and formats it into an email to send to user. Currently being used in my contact form!',
         img: formforwarder,
         gitLink: 'https://github.com/HunterMuratore/FormForwarder'
     },
     {
         name: 'Yokai',
-        description: 'Full-stack web app that allows users to create wish lists of products which other users can see and purchase for them.',
+        description: 'Full-stack web app built with React and GraphQL that allows users to create wish lists of products which other users can see and purchase for them.',
         img: yokai,
         gitLink: 'https://github.com/HunterMuratore/Yokai',
         appLink: 'https://nameless-mesa-64050-dec54f78b1de.herokuapp.com/'
     },
     {
         name: 'Musik',
-        description: 'Full stack app allowing users to share their favorite songs and connect with other users over music.',
+        description: 'Full stack app built in Express that allows users to share their favorite songs and connect with other users over music.',
         img: musik,
         gitLink: 'https://github.com/HunterMuratore/Musik',
         appLink: 'https://arcane-refuge-32686-92d3868f1b08.herokuapp.com/'
