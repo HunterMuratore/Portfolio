@@ -98,6 +98,19 @@ header {
     color: $theme-text;
     background-color: darken($theme-light, 8%);
   }
+
+  .Toastify__toast-container > * {
+    background-color: lighten($theme-light, 5%);
+    color: $theme-text;
+
+    &:first-child {
+      margin-top: 14%;
+    }
+    
+    button {
+      color: #fff;
+    }
+  }
 }
 
 .about {

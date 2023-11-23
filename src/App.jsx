@@ -1,4 +1,3 @@
-// Import child components of the BrowserRouter import you wrap your app in
 import { Routes, Route } from 'react-router-dom'
 
 import Header from './components/Header'

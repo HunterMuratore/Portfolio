@@ -2,6 +2,11 @@ import { useState } from "react"
 import { useNavigate } from "react-router"
 import axios from "axios"
 
+import { ToastContainer, toast } from "react-toastify"
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSpinner } from '@fortawesome/free-solid-svg-icons'
+
 const initialFormData = {
     subject: 'New Portfolio Message',
     firstName: '',
@@ -28,19 +33,17 @@ function Contact() {
             })
 
             if (response.status === 200) {
-                // Redirect user to success page after form submission
                 navigate('/success')
+                setFormData({
+                    ...initialFormData
+                })
             } else {
-                navigate('/error')
+                toast.error("Failed to send message. Refresh the page and send again")
             }
 
         } catch (error) {
-            navigate('/error')
-        } finally {
-            // Regardless of success or failure, reset the form data
-            setFormData({
-                ...initialFormData
-            })
+            console.error('An error occurred while sending the message', error)
+            toast.error("Failed to send message. Please refresh the page and send again.")
         }
     }
 
@@ -82,12 +85,13 @@ function Contact() {
                     <textarea id="message" rows="4" className="block p-2.5 w-full text-sm rounded-lg bg-gray-50" value={formData.message} onChange={handleInputChange} name="message" placeholder="Type your message here..." required></textarea>
                 </div>
 
-                {/* Loading spinner */}
                 {loading && (
                     <div className="text-center mt-4">
-                        <p>Loading...</p>
+                        <FontAwesomeIcon icon={faSpinner} spin />
                     </div>
                 )}
+
+                <ToastContainer />
 
                 <div className="flex justify-end">
                     <button className="my-btn text-sm py-2 px-3 rounded" type="submit">Send Message</button>
