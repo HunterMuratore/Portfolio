@@ -37,13 +37,16 @@ function Contact() {
                 setFormData({
                     ...initialFormData
                 })
+                setLoading(false)
             } else {
-                toast.error("Failed to send message. Refresh the page and send again")
+                toast.error("Failed to send message. Please try sending message again.")
+                setLoading(false)
             }
 
         } catch (error) {
             console.error('An error occurred while sending the message', error)
-            toast.error("Failed to send message. Please refresh the page and send again.")
+            toast.error("Failed to send message. Please try sending message again.")
+            setLoading(false)
         }
     }
 
