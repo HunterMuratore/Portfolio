@@ -16,7 +16,7 @@ function Footer() {
 
                 <NavLink to="/pokemon"><img className="pokeball-img" src={pokeballImage} alt="Pokeball" /></NavLink>
 
-                <a href="https://www.linkedin.com/in/hunter-muratore-0b38a3173" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/HunterMuratore" target="_blank" rel="noopener noreferrer">
                     <i className="fa-brands fa-linkedin fa-2xl"></i>
                 </a>
             </div>
