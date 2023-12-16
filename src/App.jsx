@@ -9,6 +9,7 @@ import Contact from './pages/Contact'
 import Projects from './pages/Projects'
 import Pokemon from './pages/Pokemon'
 import Resume from './pages/Resume'
+import Certificate from './pages/Certificate'
 import Success from './pages/Success'
 import NotFound from './pages/NotFound'
 import Error from './pages/Error'
@@ -26,6 +27,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/pokemon' element={<Pokemon />} />
           <Route path='/resume' element={<Resume />} />
+          <Route path='/certificate' element={<Certificate />} />
           <Route path='/success' element={<Success />} />
           <Route path='/error' element={<Error />} />
           <Route path='*' element={<NotFound />}></Route>
