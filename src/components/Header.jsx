@@ -89,9 +89,7 @@ function Header() {
             )}
           </div>
 
-          <NavLink to="/contact" onClick={closeExperienceDropdown}>
-            Contact
-          </NavLink>
+          <NavLink to="/contact" onClick={closeExperienceDropdown}>Contact</NavLink>
         </div>
       </nav>
 
@@ -118,9 +116,7 @@ function Header() {
           )}
         </div>
 
-        <NavLink to="/contact" onClick={closeExperienceDropdown}>
-          Contact
-        </NavLink>
+        <NavLink to="/contact" onClick={closeExperienceDropdown}>Contact</NavLink>
       </nav>
     </header>
   )
