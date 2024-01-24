@@ -2,10 +2,17 @@ import musik from '../images/projects/musik.png'
 import formforwarder from '../images/projects/formforwarder.png'
 import jate from '../images/projects/jate.png'
 import employee_tracker from '../images/projects/employee_tracker.png'
-import pokemon_gen from '../images/projects/pokemon.png'
+import ski from '../images/projects/ski.png'
 import yokai from '../images/projects/yokai.png'
 
 const projects = [
+    {
+        name: 'Ski Jewelers',
+        description: 'Website built with React + Vite for a local jewelry store. Worked closely with the owner of the store to create a website to their exact specifications.',
+        img: ski,
+        gitLink: 'https://github.com/HunterMuratore/ski-jewelers',
+        appLink: 'https://www.skijewelersgreenbrook.com/'
+    },
     {
         name: 'FormForwarder',
         description: 'API built in C# using .NET Core that takes in form data and formats it into an email to send to user. Currently being used in my contact form!',
@@ -39,13 +46,6 @@ const projects = [
         img: employee_tracker,
         gitLink: 'https://github.com/HunterMuratore/employee-tracker-cms'
     },
-    {
-        name: 'Pokemon Generator',
-        description: 'Template built in HTML and Javascript that generates a random Pokemon on button click and changes CSS to match the Pokemon\'s type.',
-        img: pokemon_gen,
-        gitLink: 'https://github.com/HunterMuratore/Random-Pokemon-Generator',
-        appLink: 'https://huntermuratore.github.io/Random-Pokemon-Generator/'
-    }
 ]
 
 function Projects() {
