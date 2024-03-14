@@ -4,8 +4,16 @@ import jate from '../images/projects/jate.png'
 import employee_tracker from '../images/projects/employee_tracker.png'
 import ski from '../images/projects/ski.png'
 import yokai from '../images/projects/yokai.png'
+import whiskeyhabits from '../images/projects/whiskeyhabits.png'
 
 const projects = [
+    {
+        name: 'WhiskeyHabits.com',
+        description: 'Full-stack web app using Apollo Server/GraphQL with a React frontend. Implemented features for personalized collections, whiskey reviews and ratings of over 2000 whiskeys.',
+        img: whiskeyhabits,
+        gitLink: 'https://github.com/HunterMuratore/WhiskeyHabits',
+        appLink: 'https://www.whiskeyhabits.com/'
+    },
     {
         name: 'Ski Jewelers',
         description: 'Website built with React + Vite for a local jewelry store. Worked closely with the owner of the store to create a website to their exact specifications.',
@@ -33,13 +41,13 @@ const projects = [
         gitLink: 'https://github.com/HunterMuratore/Musik',
         appLink: 'https://arcane-refuge-32686-92d3868f1b08.herokuapp.com/'
     },
-    {
-        name: 'J.A.T.E.',
-        description: 'Progressive web app text editor that runs in the browser and functions both online and offline. Users can install JATE to the local system and take notes with JavaScript syntax highlighting.',
-        img: jate,
-        gitLink: 'https://github.com/HunterMuratore/pwa-text-editor',
-        appLink: 'https://morning-shelf-20480-d6c36316ee54.herokuapp.com/'
-    },
+    // {
+    //     name: 'J.A.T.E.',
+    //     description: 'Progressive web app text editor that runs in the browser and functions both online and offline. Users can install JATE to the local system and take notes with JavaScript syntax highlighting.',
+    //     img: jate,
+    //     gitLink: 'https://github.com/HunterMuratore/pwa-text-editor',
+    //     appLink: 'https://morning-shelf-20480-d6c36316ee54.herokuapp.com/'
+    // },
     {
         name: 'Employee Tracker',
         description: 'NodeJS app that allows a user to keep track of an entire employee network. Users have the ability to easily view and edit all departments, roles and employees in their system.',
