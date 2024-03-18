@@ -22,8 +22,9 @@ function About() {
             <section className="about text-center">
                 <article className="2xl:text-2xl xl:text-xl lg:text-xl md:text-lg sm:text-md mt-10">
                     <h1 className="text-2xl font-bold mt-10 mb-5">About Me</h1>
-                    <p>Through 2020 and 2021 I worked as a R&D specialist in an inorganic chemistry lab at Air Liquide. Looking for a career change, I shifted my focus to software development. Following a year of independent learning, I decided to pursue a certificate from the Rutgers Full-Stack Bootcamp. With my extensive background in inorganic chemistry and the comprehensive skill set I acquired during the bootcamp, I have successfully undertaken the development of several full-stack applications. This ongoing journey has culminated in my establishment as a proficient and adept full-stack developer.</p>
-                    <p>In my free time, I enjoy playing challenging games. Some of my favorites include Slay The Spire, Terraria, Rocket League, and Magic: The Gathering.</p>
+                    <p>After several years as a research and development specialist in inorganic chemistry at Air Liquide, I embarked on an exhilarating journey into the realm of software development. Fueled by a deep personal commitment to learning and a passion for overcoming challenges, I committed myself to the ongoing journey of mastering the craft of software development. Following a rigorous year of independent study and a transformative experience at the Rutgers Full-Stack Bootcamp, I emerged equipped with a comprehensive skill set and a fervent determination to excel.</p>
+
+                    <p>Through perseverance and unwavering dedication, I have not only established myself as a proficient and adept software developer but also cultivated a mindset of lifelong learning and growth. My journey is ongoing, and I am excited to embrace the challenges and opportunities that lie ahead.</p>
                 </article>
                 <NavLink to="/resume"><button type="button" className="my-btn text-sm mt-10 my-5 py-2 px-3 rounded">View My Resume</button></NavLink>
             </section>
