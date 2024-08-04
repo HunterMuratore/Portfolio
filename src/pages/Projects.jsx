@@ -4,6 +4,7 @@ import jate from '../images/projects/jate.png'
 import employee_tracker from '../images/projects/employee_tracker.png'
 import ski from '../images/projects/ski.png'
 import yokai from '../images/projects/yokai.png'
+import golden_moments from '../images/projects/goldenmoments_2.png'
 import whiskeyhabits from '../images/projects/whiskeyhabits.png'
 
 const projects = [
@@ -20,6 +21,13 @@ const projects = [
         img: ski,
         gitLink: 'https://github.com/HunterMuratore/ski-jewelers',
         appLink: 'https://www.skijewelersgreenbrook.com/'
+    },
+    {
+        name: 'Golden Moments',
+        description: 'Custom website for a catering and event planning company. Worked closely with the business owner to emphasize visually appealing design and seamless navigation.',
+        img: golden_moments,
+        gitLink: 'https://github.com/HunterMuratore/Golden-Moments',
+        appLink: 'https://www.goldenmomentsnj.com/'
     },
     {
         name: 'FormForwarder',
@@ -48,12 +56,12 @@ const projects = [
     //     gitLink: 'https://github.com/HunterMuratore/pwa-text-editor',
     //     appLink: 'https://morning-shelf-20480-d6c36316ee54.herokuapp.com/'
     // },
-    {
-        name: 'Employee Tracker',
-        description: 'NodeJS app that allows a user to keep track of an entire employee network. Users have the ability to easily view and edit all departments, roles and employees in their system.',
-        img: employee_tracker,
-        gitLink: 'https://github.com/HunterMuratore/employee-tracker-cms'
-    },
+    // {
+    //     name: 'Employee Tracker',
+    //     description: 'NodeJS app that allows a user to keep track of an entire employee network. Users have the ability to easily view and edit all departments, roles and employees in their system.',
+    //     img: employee_tracker,
+    //     gitLink: 'https://github.com/HunterMuratore/employee-tracker-cms'
+    // },
 ]
 
 function Projects() {

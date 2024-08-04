@@ -71,6 +71,7 @@ function Header() {
           <NavLink to="/" onClick={closeExperienceDropdown}>Home</NavLink>
           <NavLink to="/about" onClick={closeExperienceDropdown}>About</NavLink>
           <NavLink to="/projects" onClick={closeExperienceDropdown}>Projects</NavLink>
+          <NavLink to="/editing" onClick={closeExperienceDropdown}>Editing</NavLink>
 
           <div className='relative'>
             <div onClick={toggleExperienceDropdown} className="cursor-pointer text-white">
@@ -98,6 +99,7 @@ function Header() {
         <NavLink to="/" onClick={closeExperienceDropdown}>Home</NavLink>
         <NavLink to="/about" onClick={closeExperienceDropdown}>About</NavLink>
         <NavLink to="/projects" onClick={closeExperienceDropdown}>Projects</NavLink>
+        <NavLink to="/editing" onClick={closeExperienceDropdown}>Editing</NavLink>
 
         <div className='relative'>
           <div onClick={toggleExperienceDropdown} className="cursor-pointer text-white">

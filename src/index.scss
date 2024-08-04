@@ -64,7 +64,7 @@ header {
 
   nav {
     :not(:last-child) {
-      margin-right: 10px;
+      margin-right: 16px;
     }
 
     .active {
@@ -113,6 +113,14 @@ header {
 }
 
 .about {
+  padding: 0 5%;
+
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+.editing {
   padding: 0 5%;
 
   p {
