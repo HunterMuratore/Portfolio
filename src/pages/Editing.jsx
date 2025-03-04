@@ -37,16 +37,16 @@ function Editing() {
                     OkRobert
                 </a></h2>
 
-                {/* <div className="video-container mt-10 mx-auto" style={{ width: videoWidth, height: videoHeight }}>
+                <div className="video-container mt-10 mx-auto" style={{ width: videoWidth, height: videoHeight }}>
                     <iframe
                         width="100%"
                         height="100%"
-                        src="https://www.youtube.com/embed/ccAyMqrkNIs"
+                        src="https://www.youtube.com/embed/pqRkEhJTfK8?si=mpmTkQU0APa4fSIR"
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                     ></iframe>
-                </div> */}
+                </div>
 
                 <div className="video-container mt-10 mx-auto" style={{ width: videoWidth, height: videoHeight }}>
                     <iframe
@@ -63,7 +63,7 @@ function Editing() {
                     <iframe
                         width="100%"
                         height="100%"
-                        src="https://www.youtube.com/embed/wapju_cL3ag?start=1858"
+                        src="https://www.youtube.com/embed/qWDViJ7YWlk?si=ofazBX0vYKvNCCEo"
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
